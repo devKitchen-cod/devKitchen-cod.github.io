@@ -1,0 +1,34 @@
+/*.header{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20;
+    span{
+        display: block;
+    }
+    &:hover{ //эффект при наведении!
+        background-color:#000;
+    }
+}*/
+
+
+@background: rgb(36, 36, 160);
+
+
+.font(@fz: 20px){
+    font-size: @fz;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.header {
+    
+    .font(15px);  
+    background-color: @background;
+    color: #000055;
+    
+}
+span{
+    .font(30px);
+}
+
+
+
